@@ -1,9 +1,19 @@
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true
+});
+
 const typeOfDeposit = document.getElementById("type");
 const terms = document.getElementById("term");
 const calcButton = document.getElementById("calculate_button");
 const calcSolution = document.getElementById("calculator__solution");
 const calcSolution2 = document.getElementById("calculator__solution2");
 const contribution = document.getElementById("calculator__contribution");
+
 
 const refillableOptions = [
     {months: 6, percent: 20, text: "6 месяцев - 20%"},

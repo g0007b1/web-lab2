@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <div class="page">
@@ -27,9 +31,25 @@
             </div>
         </div>
     </div>
+    <h2 class="cats-header">Задание 1: Галерея котиков (сделано через Swiper)</h2>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/Misa/1.jpg"></div>
+            <div class="swiper-slide"><img src="images/Leo/1.jpg"></div>
+            <div class="swiper-slide"><img src="images/Misa/2.jpg"></div>
+            <div class="swiper-slide"><img src="images/Leo/2.jpg"></div>
+            <div class="swiper-slide"><img src="images/Misa/3.jpg"></div>
+            <div class="swiper-slide"><img src="images/Leo/3.jpg"></div>
+            <div class="swiper-slide"><img src="images/Misa/4.jpg"></div>
+            <div class="swiper-slide"><img src="images/Leo/4.jpg"></div>
+            <div class="swiper-slide"><img src="images/Leo/5.jpg"></div>
+        </div>
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
     <main class="content">
-        <h2>Калькулятор вкладов</h2>
+        <h2 class="calculator__header">Задание 2: Калькулятор вкладов</h2>
         <div class="calculator">
             <div class="calculator__inputs">
                 <select class="select" id="type">
@@ -39,9 +59,6 @@
 
                 <select class="select" id="term">
                 </select>
-
-
-
             </div>
             <input class="contribution__input" type="number" placeholder="Сумма вклада" id="calculator__contribution">
             <button class="contribution__button" id="calculate_button">Рассчитать</button>
@@ -53,6 +70,7 @@
     </main>
 
 </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
