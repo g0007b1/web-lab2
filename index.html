@@ -34,17 +34,17 @@
     <h2 class="cats-header">Задание 1: Галерея котиков (сделано через Swiper)</h2>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/Misa/1.jpg"></div>
-            <div class="swiper-slide"><img src="images/Leo/1.jpg"></div>
-            <div class="swiper-slide"><img src="images/Misa/2.jpg"></div>
-            <div class="swiper-slide"><img src="images/Leo/2.jpg"></div>
-            <div class="swiper-slide"><img src="images/Misa/3.jpg"></div>
-            <div class="swiper-slide"><img src="images/Leo/3.jpg"></div>
-            <div class="swiper-slide"><img src="images/Misa/4.jpg"></div>
-            <div class="swiper-slide"><img src="images/Leo/4.jpg"></div>
-            <div class="swiper-slide"><img src="images/Leo/5.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Misa/1.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leo/1.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Misa/2.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leo/2.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Misa/3.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leo/3.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Misa/4.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leo/4.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leo/5.jpg"></div>
         </div>
-        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
 
@@ -52,13 +52,13 @@
         <h2 class="calculator__header">Задание 2: Калькулятор вкладов</h2>
         <div class="calculator">
             <div class="calculator__inputs">
-                <select class="select" id="type">
-                    <option selected value="1">Пополняемый</option>
-                    <option value="2">Срочный</option>
-                </select>
+                <label for="type"></label><select class="select" id="type">
+                <option selected value="1">Пополняемый</option>
+                <option value="2">Срочный</option>
+            </select>
 
-                <select class="select" id="term">
-                </select>
+                <label for="term"></label><select class="select" id="term">
+            </select>
             </div>
             <input class="contribution__input" type="number" placeholder="Сумма вклада" id="calculator__contribution">
             <button class="contribution__button" id="calculate_button">Рассчитать</button>
