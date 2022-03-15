@@ -122,14 +122,18 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
+/*select {*/
+/*    -webkit-appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    appearance: none;*/
+/*}*/
+
 .select, .contribution__button {
     height: 40px;
     margin-top: 10px;
     padding: 0;
     text-align: center;
 }
-
-
 
 .swiper-slide {
     text-align: center;

@@ -1,5 +1,8 @@
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+    alert('Разметка не предназначена для браузера Safari :( \nИсправить стили комбобоксов мне не удалось. Чтобы посмотреть корректное отображение советую использовать браузер Chrome');
+}
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -55,8 +58,7 @@ const calculateTerm = () => {
         let finalSolution = Number(terms.value / 100 * contribution.value) + Number(contribution.value);
         calcSolution.textContent = `По вкладу "${vklad}" на срок и ставку ${terms.options[terms.selectedIndex].textContent}, при сумме ${contribution.value}`;
         calcSolution2.textContent = `В конце срока вы получите ${finalSolution}р.`
-    }
-    else {
+    } else {
         calcSolution.innerHTML = "<p style='color: red'>Введите сумму вклада!</p>"
         calcSolution2.textContent = "";
     }
