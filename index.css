@@ -1,0 +1,116 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Karla:wght@200;500;600;700;800&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.page {
+    font-family: 'Comfortaa', serif;
+    width: 60%;
+    margin: auto;
+}
+
+.header__img {
+    width: 300px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.header__names {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.header__title {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.header__subtitle {
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.calculator__text {
+   text-align: center;
+}
+
+/*Для телефонов*/
+@media screen and (max-width: 768px) {
+    .calculator__inputs {
+        flex-direction: column;
+    }
+    .calculator {
+        width: 80%;
+    }
+    .select{
+        width: 100%;
+    }
+}
+
+/*Для компьютеров*/
+@media screen and (min-width: 768px) {
+    .calculator__inputs {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .calculator {
+        width: 80%;
+    }
+    .calculator__inputs {
+        align-items: center;
+    }
+
+    .select, .contribution__button, .contribution__input {
+        margin-left: 10px;
+    }
+    .calculator__text {
+        margin-left: 10px;
+    }
+    .select{
+        width: 50%;
+    }
+
+}
+
+.calculator__inputs {
+    display: flex;
+}
+
+.contribution__input {
+    height: 36px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.select, .contribution__button {
+    height: 40px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
