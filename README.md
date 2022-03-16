@@ -16,3 +16,5 @@
 
 ![alt Скриншот Задания 1](images/ReadMe/Task1.png)
 ![alt Скриншот Задания 2](images/ReadMe/Task2.png)
+![alt Скриншот Задания 1 мобильной версии](images/ReadMe/Task1_mobile.png)
+![alt Скриншот Задания 2 мобильной версии](images/ReadMe/Task2_mobile.png)
